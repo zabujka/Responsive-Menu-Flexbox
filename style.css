@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* DEFAULT flex-direction: row;*/
+}
+
+li {
+    flex-basis: 25%;
+    /* DEFAULT flex-shrink: 1*/
+    /* flex-grow: 1;
+    JAKBYM MIALA U GORY FLEX-BASIS 15% TO DOPISUJE FLEX-GROW I ELEMNTY ROSNA TYLE ZEBY ZAJMOWAC 100%, 
+    ALE ZE FLEX GROW JEST DOMYSLNIE 0 TO U GORY WPISUJEMY FLEX-BASIS 15% I JEST MNIEJ PISANIA   */
+}
+
+a {
+    display: block;
+    font-size: 22px;
+    background-color: #ff80ab;
+    text-align: center;
+    color: white;
+    font-family: 'open sans', 'sans-serif';
+    text-decoration: none;
+    padding: 20px;
+    /*margin: 15px; */
+}
+
+a:hover {
+    background-color: #f50057;
+}
+
+@media (min-width: 1025px) {
+    ul {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 15px;
+    }
+}
